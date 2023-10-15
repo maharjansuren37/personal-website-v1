@@ -260,6 +260,7 @@ section {
 }
 
 .section__subtitle--about {
+    font-size: 1.8rem;
     margin-block: .5rem 1rem;
 }
 
@@ -270,7 +271,7 @@ section {
 .about-me__list {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
     margin-inline: auto;
     gap: 2rem;
     justify-content: center;
@@ -286,6 +287,10 @@ section {
     align-items: center;
 }
 
+.about-me__item h3 {
+    font-size: 1.15rem;
+}
+
 .checkmark {
     width: 30px;
 }
@@ -294,6 +299,10 @@ section {
     .about-me__body--desc {
         width: 50%;
         margin-inline: auto;
+    }
+
+    .about-me__list {
+        width: 50%;
     }
 }
 
