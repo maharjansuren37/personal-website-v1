@@ -1,109 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,900&display=swap" rel="stylesheet">
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- scripts -->
-    <script defer src="app.js"></script>
     <title>Suren Maharjan</title>
- </head>
- <body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header class="header">
-        <div class="container">
-            <div class="navigation">
-                <div class="nav-left">
-                    <a href="#home" class="logo-icon">Suren Maharjan</a>
-                    <span class="menu-toggle">Menu</span>
-                </div>
-
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">about me</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">contact me</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="hero row">
-                <div class="hero-text">
-                    <h1 class="hero-title">Hello, I am Suren Maharjan</h1>
-                </div>
-                <div class="hero-image">
-                    HERO IMAGE
-                </div>
-            </div>
-        </div>
+            <a href="#home" class="logo">
+                <img src="/assets//logo/logo-reg.svg" alt="logo">
+            </a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about-me" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">My work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
 
-    <!-- About me -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>About me</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quam nihil, eligendi laborum molestias corporis at ex dolorum eaque obcaecati officiis nostrum dolor unde laboriosam accusamus dolorem, in suscipit odit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus veritatis unde nostrum architecto deserunt, magni porro laboriosam eos libero facilis tenetur itaque error, animi quidem est labore dignissimos nisi.</p>
+    <main class="container">
+        <!-- INTRO -->
+        <section class="intro" id="home">
+          <h1 class="section__title section__title--intro">Hi, I am <strong>Suren Maharjan</strong></h1>
+          <p class="section__subtitle--intro">Front-end Developer</p>
+          <div class="btns">
+            <button class="btn btn-light" onclick="window.open('./assets/images/resume-example.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-dark" onclick="location.href='#contact'">
+                Contact Info
+            </button>
+          </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="about-me" id="about-me">
+            <div class="about-me__desc">
+                <p>Get To Know More</p>
+                <h2 class="section__title section__title--about">
+                    About me
+                </h2>
+                <div class="about-me__body--desc">
+                    <p>Hello! My name is Suren and I enjoy creating things that thrive within the online realm. My interest in web development started back in 2020 when I was studying Principle of Programming one of my Master's degree course and I was learning Python for the first time. During that time, I learned Python and also got chance to learn and know about other programming languages.</p>
+                    <p> And with my curiosity and more eagerness to learn, I found web development more interesting and exciting as I can build things and see the result at the same time, I can also create things for people and help build web applications. So, I started learning on my own with available online resources. Since then I fell in love with programming and coding, and also, I have been learning and building things for web. I highly focus on accessibility, interactivity, responsiveness and reusability of the web. So, I am looking for an opportunity to work and to build beautiful things for the web with my knowledge and skills that I have gained so far.</p>
                 </div>
-                <div class="col">
-                    <h2>My skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
-                        <li>HTML</li>
+            </div>
+
+            <div class="about-me__skills">
+                <div class="about-me__body--skills">
+                    <h3 class="section__subtitle--about">My skills</h3>
+                    <ul class="about-me__list">
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <h3>Javascript</h3>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <h3>React Js</h3>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <h3>Next Js</h3>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <div>
+                                <h3>Node Js</h3>
+                            </div>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <div>
+                                <h3>SQL</h3>
+                            </div>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <div>
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <div>
+                                <h3>Tailwind</h3>
+                            </div>
+                        </div>
+                        <div class="about-me__item">
+                            <img src="/assets/images/checkmark.png" class="checkmark" alt="checkmark">
+                            <div>
+                                <h3>Git</h3>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>Project one</h3>
+        <!-- WORKS -->
+        <section class="works" id="works">
+            <p class="section__subtitle--works">Browse My Recent</p>
+            <h1 class="section__title section__title--works">Works</h1>
+            <div class="works__wrapper">
+                <div class="works__card">
+                    <div class="works__card--img">
+                        <img src="/assets/images/newbook.PNG" alt="the book" class="the-book">
+                    </div>
+                    <h3 class="works__card--title">
+                        the book
+                    </h3>
+                    <!-- <button  class="btn__works"
+                    onclick="myFunction()"
+                    >Learn More</button> -->
+                    <a href="https://dapper-alfajores-fd8dbe.netlify.app/" class="demo-btn" target="_blank">Live Demo</a>
                 </div>
-                <div class="col">
-                    <h3>Project one</h3>
+                <div class="works__card">
+                    <div class="works__card--img">
+                        <img src="/assets/images/newport.PNG" alt="">
+                    </div>
+                    <h3 class="works__card--title">
+                        Portfolio
+                    </h3>
+                    <!-- <button class="btn__works">Learn More</button> -->
+                    <a href="https://dapper-alfajores-fd8dbe.netlify.app/" class="demo-btn" target="_blank">Live Demo</a>
+
                 </div>
-                <div class="col">
-                    <h3>Project one</h3>
-                </div>
-                <div class="col">
-                    <h3>Project one</h3>
+                <div class="works__card">
+                    <div class="works__card--img">
+                        <img src="/assets/images/desk.PNG" alt="metrodesk">
+                    </div>
+                    <h3 class="works__card--title">
+                        MetroDesk
+                    </h3>
+                    <!-- <button class="btn btn__works">
+                        Learn More
+                    </button> -->
+                    <a href="https://metrodesk.vercel.app/" class="demo-btn" target="_blank">Live Demo</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact me -->
-    <section id="contact">
-        <div class="container">
-            <div class="form">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" placeholder="e.g. Mario" required />
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <p>Get In Touch</p>
+            <h1>Contact Me</h1>
+            <div class="contact__wrapper">
+                <div>
+                    <img class="email-icon" src="assets/images/email.png" alt="email icon">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" placeholder="e.g. mario@example.com" required />
-                </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" cols="30" rows="10" placeholder="Your message"></textarea>
-                </div>
+                <p><a href="mailto:maharjansuren37@gmail.com" class="email">
+                    maharjansuren37@gmail.com
+                </a></p>
             </div>
-        </div>
-    </section>
- </body>   
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#home" class="footer__nav-link">Home</a></li>
+                <li class="footer__nav-item"><a href="#about-me" class="footer__nav-link">About</a></li>
+                <li class="footer__nav-item"><a href="#works" class="footer__nav-link">Works</a></li>
+                <li class="footer__nav-item" class="footer__nav-link"><a href="#contact" class="footer__nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">Copyright &#169; 2023 Suren Maharjan. All Rights Reserved</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
 </html>

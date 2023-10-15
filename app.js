@@ -1,10 +1,14 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
+// navigation
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link');
+const hamburger = document.querySelector('.hamburger');
 
-menuToggle.addEventListener('click', function() {
-    if (!nav.classList.contains('show')) {
-        nav.classList.add('show');
-    } else {
-        nav.classList.remove('show');
-    }
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        document.body.classList.remove('nav-open');
+    });
 })
