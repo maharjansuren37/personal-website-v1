@@ -310,7 +310,8 @@ section {
 .works {
     flex-direction: column;
     text-align: center;
-    gap: 2rem;
+    place-content: center;
+    margin-top: 3rem;
 }
 
 .works__card {
